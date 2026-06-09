@@ -1,4 +1,6 @@
-const api = process.env.NEXT_PUBLIC_BASE_URL
+import { getApiBaseUrl } from '@/lib/env'
+
+const api = getApiBaseUrl()
 
 type AddCartPayload = {
   userId: number
